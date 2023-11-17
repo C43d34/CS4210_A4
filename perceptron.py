@@ -42,7 +42,7 @@ for learning_rate in n: #iterates over n
             if (classifier == "Single-Layer"):
               clf = Perceptron(eta0 = learning_rate, shuffle = shuffle_flag, max_iter = 1000)    #use those hyperparameters: eta0 = learning rate, shuffle = shuffle the training data, max_iter=1000
             else:
-              clf = MLPClassifier(activation = "logistic", learning_rate_init = learning_rate, hidden_layer_sizes = (10,), shuffle = shuffle_flag, max_iter = 1000) #use those hyperparameters: activation='logistic', learning_rate_init = learning rate, hidden_layer_sizes = number of neurons in the ith hidden layer,
+              clf = MLPClassifier(activation = "logistic", learning_rate_init = learning_rate, hidden_layer_sizes = (25,), shuffle = shuffle_flag, max_iter = 1000) #use those hyperparameters: activation='logistic', learning_rate_init = learning rate, hidden_layer_sizes = number of neurons in the ith hidden layer,
                                     #  shuffle = shuffle the training data, max_iter=1000
 
 
